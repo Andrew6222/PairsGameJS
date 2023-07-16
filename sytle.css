@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  background: #bfb6ff;
+}
+
+#pairs {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  width: 40vw;
+  height: 40vw;
+  font-size: 40px;
+}
+
+h1 {
+  margin: 10px 0;
+}
+.timer {
+  margin: 15px 0;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #48426d;
+  color: #f0c38e;
+  cursor: pointer;
+}
+.hidden > div {
+  transition: 400ms all;
+  opacity: 0;
+}
+
+#newgame {
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  background: #f1aa9b;
+  color: white;
+  padding: 1em;
+  cursor: pointer;
+  opacity: 0;
+}
